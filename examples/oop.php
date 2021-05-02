@@ -15,13 +15,13 @@ $data = [
 
 switch ($codigoBanco) {
     case BancoEnum::SANTANDER:
-        $banco = new Santander($data);
+        $boleto = new Santander($data);
         break;
     case BancoEnum::BRADESCO:
-        $banco = new Bradesco($data);
+        $boleto = new Bradesco($data);
         break;
     default:
         throw new Exception('Banco não implementado');
 }
 
-echo "Nosso numero: {$banco->getNossoNumero()}-{$banco->getNossoNumeroDv()}" . PHP_EOL;
+echo "Nosso numero: {$boleto->getNossoNumero()}-{$boleto->getNossoNumeroDv()}" . PHP_EOL;

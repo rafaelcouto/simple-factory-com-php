@@ -12,6 +12,6 @@ $data = [
 ];
 
 $boletoFactoryImproved = new BoletoFactoryImproved();
-$banco = $boletoFactoryImproved->create($codigoBanco, $data);
+$boleto = $boletoFactoryImproved->create($codigoBanco, $data);
 
-echo "Nosso numero: {$banco->getNossoNumero()}-{$banco->getNossoNumeroDv()}" . PHP_EOL;
+echo "Nosso numero: {$boleto->getNossoNumero()}-{$boleto->getNossoNumeroDv()}" . PHP_EOL;
