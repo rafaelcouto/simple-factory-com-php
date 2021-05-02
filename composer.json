@@ -1,0 +1,11 @@
+{
+    "name": "rafaelcouto/simple-factory",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleFactory\\": "src/"
+        }
+    }
+}
